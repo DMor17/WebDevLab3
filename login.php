@@ -1,5 +1,7 @@
 <html>
 
+
+
 <form method="post" action=<?php logInValidation()?>>
 
     Username:<input type="text" name="username"><br>
@@ -13,12 +15,11 @@
 
 function logInValidation(){
 
-    $attemptUsername = $_POST["username"];
-    $attemptPassword = $_POST["password"];
+
 
     $username = "Mike";
     $password = "password1";
-if($attemptUsername = $username AND $attemptPassword = $password)
+if($username = $_POST["username"] AND $password = $_POST["password"])
 {
     setcookie("username", $username, 75748,"","");
     setcookie("access_level", "standarduser", 75748,"","");
