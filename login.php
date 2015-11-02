@@ -1,16 +1,36 @@
+<html>
+
+<form action="loginSuccessful.php">
+    Name: <input type="text" name="name"><br>
+    E-mail: <input type="text" password="pass"><br>
+
 <?php
-/**
- * Created by PhpStorm.
- * User: daniel
- * Date: 02/11/15
- * Time: 13:25
- */
+
+$attemptUsername = $_POST["name"];
+$attemptPassword = $_POST["pass"];
+
 $username = "Mike";
 $password = "password1";
+if($attemptUsername = $username AND $attemptPassword = $password)
+{
+    setcookie("username", $username, 75748,"","");
+    setcookie("access_level", "standarduser", 75748,"","");
+    header("Location: http://1406997.azurewebsites.net/loginSuccessful.php");
+    exit;
+}
 
-<form action="welcome.php" method="post">
-    Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
+else
+{
+    echo "Wrong log in information";
+    setcookie("access_level", "root", 75748,"","");
+}
+
+
+?>
 </form>
+
+
+</html>
+
+
 
