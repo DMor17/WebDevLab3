@@ -1,3 +1,10 @@
+<html>
+
+<?php displayAccessLevelInformation($_COOKIE["access_level"]) ?>
+
+
+</html>
+
 <?php
 
 
