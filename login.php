@@ -1,9 +1,9 @@
 <html>
 
-<form action="loginSuccessful.php">
+<form>
     Name: <input type="text" name="name"><br>
     E-mail: <input type="text" password="pass"><br>
-
+    <input type="submit" value="Submit">
 <?php
 
 $attemptUsername = $_POST["name"];
