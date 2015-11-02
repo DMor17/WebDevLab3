@@ -15,6 +15,6 @@ function displayAccessLevelInformation() {
     }
     else{
 
-        echo "FRASER IS PASSIVE AGGRESSIVE";
+        echo "No cookies";
     }
 }
