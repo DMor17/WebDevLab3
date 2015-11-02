@@ -1,9 +1,9 @@
 <html>
 
 <form>
-    Name: <input type="text" name="Mike"><br>
-    E-mail: <input type="text" password="password1"><br>
-    <input type="submit" value="Submit">
+    Name: <input type="text" name="username"><br>
+    E-mail: <input type="text" password="pass"><br>
+
 <?php
 
 $attemptUsername = $_POST["name"];
@@ -24,6 +24,7 @@ if($attemptUsername == $username AND $attemptPassword == $password)
 ?>
 </form>
 
+<input type="submit" value="Submit">
 
 </html>
 
