@@ -1,17 +1,22 @@
 <html>
 
-<form>
+<form method="post" action="<?php logInValidation()?>>
     Name: <input type="text" name="username"><br>
-    E-mail: <input type="text" password="pass"><br>
+    E-mail: <input type="text" password="password"><br>
+    <input type="submit" value="Submit">
 
 <?php
 
-$attemptUsername = $_POST["name"];
-$attemptPassword = $_POST["pass"];
 
-$username = "Mike";
-$password = "password1";
 
+
+function logInValidation(){
+
+    $attemptUsername = $_POST["name"];
+    $attemptPassword = $_POST["password"];
+
+    $username = "Mike";
+    $password = "password1";
 if($attemptUsername == $username AND $attemptPassword == $password)
 {
     setcookie("username", $username, 75748,"","");
@@ -20,11 +25,11 @@ if($attemptUsername == $username AND $attemptPassword == $password)
     exit;
 }
 
-
+}
 ?>
 </form>
 
-<input type="submit" value="Submit">
+
 
 </html>
 
