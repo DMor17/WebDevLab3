@@ -2,13 +2,13 @@
 
 
 
-<form method="post">
+<form method="post" action="checkLogIn.php">
 
     Username:<input type="text" name="username"><br>
     Password:<input type="text" password="password"><br>
     <input type="submit" value="Submit">
 </form>
-//<?php
+<?php
 
  //   if (isset($_POST['submit'])) {
    //     if ($username = $_POST["username"] && $password = $_POST["password"]) {
