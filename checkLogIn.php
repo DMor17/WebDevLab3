@@ -1,7 +1,7 @@
 <?php
 
 $username = "Mike";
-$password = "password";
+$password = "password1";
 
 $user = $_POST["username"];
 $pass = $_POST["password"];
