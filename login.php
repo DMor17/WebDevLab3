@@ -11,7 +11,8 @@ $attemptPassword = $_POST["pass"];
 
 $username = "Mike";
 $password = "password1";
-if($attemptUsername = $username AND $attemptPassword = $password)
+
+if($attemptUsername == $username AND $attemptPassword == $password)
 {
     setcookie("username", $username, 75748,"","");
     setcookie("access_level", "standarduser", 75748,"","");
