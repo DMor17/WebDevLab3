@@ -1,8 +1,8 @@
 <html>
 
 <form>
-    Name: <input type="text" name="name"><br>
-    E-mail: <input type="text" password="pass"><br>
+    Name: <input type="text" name="Mike"><br>
+    E-mail: <input type="text" password="password1"><br>
     <input type="submit" value="Submit">
 <?php
 
@@ -18,12 +18,6 @@ if($attemptUsername == $username AND $attemptPassword == $password)
     setcookie("access_level", "standarduser", 75748,"","");
     header("Location: http://1406997.azurewebsites.net/loginSuccessful.php");
     exit;
-}
-
-else
-{
-    echo "Wrong log in information";
-    setcookie("access_level", "root", 75748,"","");
 }
 
 
