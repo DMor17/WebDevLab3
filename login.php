@@ -1,10 +1,11 @@
 <html>
 
-<form method="post" action="<?php logInValidation()?>>
-    Name: <input type="text" name="username"><br>
-    E-mail: <input type="text" password="password"><br>
-    <input type="submit" value="Submit">
+<form method="post" action=<?php logInValidation()?>>
 
+    <input type="text" name="username"><br>
+    <input type="text" password="password"><br>
+    <input type="submit" value="Submit">
+</form>
 <?php
 
 
@@ -27,7 +28,7 @@ if($attemptUsername == $username AND $attemptPassword == $password)
 
 }
 ?>
-</form>
+
 
 
 
