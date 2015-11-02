@@ -3,7 +3,7 @@
 $username = "Mike";
 $password = "password";
 
-if ($username = $_POST["username"] && $password = $_POST["password"]){
+if ($username === $_POST["username"] && $password === $_POST["password"]){
 
 
 setcookie("username", $username, 75748, "/checkLogIn", "http://1406997.azurewebsites.net");
