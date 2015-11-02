@@ -5,7 +5,7 @@
 <form method="post" action="checkLogIn.php">
 
     Username:<input type="text" username="username"><br>
-    Password:<input type="text" password="password"><br>
+    Password:<input type="password" password="password"><br>
     <input type="submit" value="Submit">
 </form>
 
